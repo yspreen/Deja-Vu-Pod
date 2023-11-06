@@ -11,5 +11,8 @@ Pod::Spec.new do |spec|
   spec.source_files = '*.{h,m,mm}'
   spec.requires_arc = true
 
-  spec.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'Pods/DejaVuPod/BridgingHeader.h' } 
+  spec.xcconfig = {
+    'SWIFT_OBJC_BRIDGING_HEADER' => 'Pods/DejaVuPod/BridgingHeader.h',
+    'ENABLE_USER_SCRIPT_SANDBOXING' => 'NO'
+  } 
 end
