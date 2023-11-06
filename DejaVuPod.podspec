@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
   spec.source_files = '*.{h,m,mm}'
   spec.requires_arc = true
 
-  spec.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'BridgingHeader.h' } 
+  spec.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/BridgingHeader.h' } 
 end
